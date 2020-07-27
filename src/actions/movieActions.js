@@ -1,10 +1,22 @@
-import {FETCH_MOVIES, ADD_MOVIE, DELETE_MOVIE } from "./types";
+import {FETCH_MOVIES, ADD_MOVIE, DELETE_MOVIE, FETCH_REC} from "./types";
+import Recommendation from '../asserts/Recommendations.json'
+import myData from '../asserts/mylist.json'
 
 export const fetchMovies= () => dispatch => {
-    fetch('myDate.json')
-        .then(res => res.json())
-        .then(data => console.log(data))
+    dispatch({
+        type:FETCH_MOVIES,
+        payload: myData
+    })
 }
+export const fetchRec= () => dispatch => {
+    dispatch({
+        type:FETCH_REC,
+        payload: Recommendation
+    })
+}
+
+// deleteMylist, pushRec, deleteRec, pushMylist
+
 export const addMovie = postData => dispatch => {
     fetch('../asserts/myDate.json', {
         method: 'POST',

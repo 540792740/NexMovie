@@ -1,10 +1,12 @@
 *{
   box-sizing: border-box;
+  background-color: #282c34;
 }
 .header{
   display: grid;
   background-color: #282c34;
   grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px #b1b1b1 solid;
 }
 
 .header img{
@@ -37,3 +39,54 @@
   color: #63a780;
   cursor: pointer;
 }
+
+
+.container{
+  display: block;
+  text-align: center;
+}
+
+.myList-block{
+  display: block;
+  border-bottom: 1px #b1b1b1 solid;
+}
+.recom-block{
+  display: block;
+  color: cornsilk;
+}
+
+.myList-title{
+  padding: 20px 10px;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+.reco-frame{
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+.Recommendation-div{
+  text-align: center;
+  border: 1px solid cornsilk;
+}
+.reco-title{
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.reco-img{
+  padding-bottom: 20px;
+
+}
+.reco-title:hover {
+  cursor:pointer;
+  color: #63a780;
+}
+.reco-img:hover {
+  cursor:pointer;
+  color: #63a780;
+}
+
+

@@ -1,8 +1,8 @@
-import {FETCH_MOVIES} from "../actions/types";
+import {FETCH_MOVIES, FETCH_REC} from "../actions/types";
 
 const initialState = {
-    items:[],
-    item:{}
+    movies:[],
+    recMovies:[],
 };
 
 export default function (state = initialState, action) {
@@ -10,6 +10,12 @@ export default function (state = initialState, action) {
         case FETCH_MOVIES:
             return {
                 ...state,
+                movies:action.payload
+            }
+        case FETCH_REC:
+            return {
+                ...state,
+                recMovies:action.payload
             }
         default:
             return state
