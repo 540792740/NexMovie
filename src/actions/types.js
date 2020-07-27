@@ -1,4 +1,6 @@
 export const FETCH_MOVIES = "FETCH_MOVIES"
 export const FETCH_REC = "FETCH_REC"
-export const ADD_MOVIE = "ADD_MOVIE"
-export const DELETE_MOVIE = "DELETE_MOVIE"
+export const DELETE_MYLIST = "DELETE_MYLIST"
+export const PUSH_REC = "PUSH_REC"
+export const DELETE_REC = "DELETE_REC"
+export const PUSH_MYLIST = "PUSH_MYLIST"

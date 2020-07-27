@@ -4,13 +4,13 @@ import { fetchMovies, fetchRec } from "../actions/movieActions";
 
 
 class Movies extends Component {
-    componentWillMount() {
+    // componentWillMount() {
+    //     this.props.fetchMovies();
+    //     this.props.fetchRec();
+    // }
+    static getDerivedStateFromProps(nextProps){
         this.props.fetchMovies();
         this.props.fetchRec();
-        // this.state = {
-        //     title: '',
-        //     img: ''
-        // };
     }
 
     movieHandler(e){
@@ -28,7 +28,7 @@ class Movies extends Component {
         // push to rec
         this.props.pushRec(post);
     }
-    imgHandler(){
+    imgHandler(e){
         // remove
         const img = e.target.src
         const title = e.target.title
@@ -42,7 +42,6 @@ class Movies extends Component {
 
         // push to rec
         this.props.pushMylist(post);
-
     }
 
     render() {
