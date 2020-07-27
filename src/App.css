@@ -92,12 +92,14 @@
 
 
 .button-block{
-  display: block;
+  display: inline-block;
+  text-align: center;
 }
 
 .button-block button {
   display: block;
-  width: 100%;
+  width: 60%;
+  margin: 0 30px;
   height: 30px;
   border: none;
   font-size: 20px;
