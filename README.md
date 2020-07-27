@@ -1,5 +1,11 @@
+## How to Run
+* git clone
+* npm install
+* npm run
 
-## Create a mock Netflix like page with editable rows of titles using React
+
+## Requirement:
+ * Create a mock Netflix like page with editable rows of titles using React
 
  * The top row will be the ‘My List’ row and will display the titles included in ‘mylist’ array. 
  
@@ -13,7 +19,9 @@
      
  * The list of titles in the “My List” row should be displayed at the bottom of the page.
     
-Remove should move the title to recommended
-Put a netflix logo at the top left
-Ensure that a http call is made to retrieve data and not use JSON file as an object with data
-Render the data with a single template only and ensure that different functions are written for the same layout for add and remove
+ * Remove should move the title to recommended
+ * Put a netflix logo at the top left
+ * Ensure that a http call is made to retrieve data and not use JSON file as an object with data
+ * Render the data with a single template only and ensure that different functions are written for the same layout for add and remove
+
+
